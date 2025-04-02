@@ -1,0 +1,31 @@
+$background: #1e1e2e;
+$text: #cdd6f4;
+$text_hover: #a66dfc;
+
+* {
+    all: unset;
+    background-color: $background;
+    border-radius: 10px;
+}
+
+.options_label {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px white solid;
+    border-radius: 10px 10px 0 0;
+}
+
+.button_lockscreen,
+.button_exit_hyprland,
+.button_reboot,
+.button_shutdown {
+    color: $text;
+}
+
+.button_lockscreen:hover,
+.button_exit_hyprland:hover,
+.button_reboot:hover,
+.button_shutdown:hover {
+    color: $text_hover;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+(
+    defwindow home_menu
+    :monitor 0
+    :exclusive "false"
+    :geometry (geometry 
+        :anchor "top left" 
+        :x "10px" 
+        :y "0px" 
+        :width "150px"
+        :height "200px"
+    )
+    :stacking "overlay"
+    :class "window"
+
+    (menu)
+)
+
+(
+    defwidget menu []
+    (box
+        :orientation "vertical"
+
+        (label
+            :class "options_label"
+            :text "Options"
+        )
+        (button
+            :class "button_lockscreen"
+            :onclick "swaylock" "Lock screen"
+        )
+        (button
+            :class "button_exit_hyprland"
+            :onclick "exit" "Exit Hyprland"
+        )
+        (button
+            :class "button_reboot"
+            :onclick "reboot" "Reboot"
+        )
+        (button
+            :class "button_shutdown"
+            :onclick "shutdown 0" "Shutdown"
+        )
+    )
+)

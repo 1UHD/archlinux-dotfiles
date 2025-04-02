@@ -14,7 +14,9 @@
     },
 
     "custom/archlogo": {
-    	"format":"󰣇"
+    	"format":"󰣇",
+        "tooltip":false,
+        "on-click":"~/Downloads/eww/target/release/eww open home_menu --toggle --config ~/.config/eww/home_menu"
     },
 
     "hyprland/workspaces": {

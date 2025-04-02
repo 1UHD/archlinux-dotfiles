@@ -1,0 +1,1 @@
+~/Downloads/eww/target/release/eww open home_menu --toggle --config ~/.config/eww/home_menu
