@@ -8,7 +8,7 @@
     "height": 50,
     "modules-left": ["custom/archlogo","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "bluetooth", "pulseaudio","tray"],
+    "modules-right": ["custom/heat" ,"network", "bluetooth", "pulseaudio","tray"],
     "hyprland/window": {
         "format": "{}"
     },
@@ -24,6 +24,13 @@
         "all-outputs": true,
         "on-click": "activate",
         "persistent_workspaces": false
+    },
+
+    "custom/heat": {
+        "format": "{}",
+        "tooltip": false,
+        "interval": 2,
+        "exec": "~/.config/waybar/scripts/heat.sh"
     },
 
     "tray": {

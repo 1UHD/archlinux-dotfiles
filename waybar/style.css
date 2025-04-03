@@ -43,6 +43,7 @@ tooltip {
 #bluetooth,
 #workspaces,
 #tray,
+#custom-heat,
 #custom-archlogo {
     background: #1e1e2e;
     opacity: 0.8;
@@ -50,6 +51,11 @@ tooltip {
     margin: 3px 0px;
     margin-top: 10px;
     border: 1px solid #181825;
+}
+
+#custom-heat {
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 #custom-archlogo {
