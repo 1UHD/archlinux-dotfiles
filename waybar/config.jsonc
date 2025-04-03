@@ -38,12 +38,6 @@
         "spacing": 10
     },
 
-    "clock": {
-        "format": "{ :%H:%M  %d-%m-%Y}",
-	    "tooltip": false
-        //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
@@ -76,11 +70,11 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "  {essid}",
-        "format-ethernet": "LAN",
+        "format-ethernet": "󰌘 LAN",
         "tooltip-format": "{essid} - {ifname} via {gwaddr} ({signalStrength}%)",
         "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+        "format-disconnected": "⚠",
+        "on-click": "nmtui"
     },
 
     "bluetooth": {
