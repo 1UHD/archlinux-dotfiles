@@ -26,11 +26,11 @@
         )
         (button
             :class "button_lockscreen"
-            :onclick "~/Downloads/eww/target/release/eww open home_menu --toggle --config ~/.config/eww/home_menu && swaylock" "Lock screen"
+            :onclick "killall eww && swaylock" "Lock screen"
         )
         (button
             :class "button_exit_hyprland"
-            :onclick "exit" "Exit Hyprland"
+            :onclick "hyprctl dispatch exit" "Exit Hyprland"
         )
         (button
             :class "button_reboot"
