@@ -1,7 +1,7 @@
 [global]
 monitor = 0
 origin = top-right
-width = (0, 700)
+width = (0, 350)
 height = (0, 600)
 notification_limit = 10
 offset = (10, 0)
