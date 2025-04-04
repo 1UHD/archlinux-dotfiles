@@ -17,7 +17,6 @@ window {
     color: #cdd6f4;
     font-weight: bold;
     background-color: #1e1e2e;
-    background: ;
    	outline: none;
     border-radius: 10px;
     margin: 10px;
@@ -31,7 +30,7 @@ window {
 
 #inner-box {
     margin: 4px;
-    border: 10px solid #1e1e2e;
+    padding: 10px;
     color: #cdd6f4;
     font-weight: bold;
     background-color: #1e1e2e;
@@ -52,20 +51,20 @@ window {
     margin-bottom: 5px;
     /* background: rgb(255,255,255); */
 }
-/*
+
+#img {
+    padding-right: 5px;
+}
+
 #img:selected {
     background-color: #a66dfc;
-    border-radius: 10px;
 }
 
 #text:selected {
     color: #cdd6f4;
-    margin: 0px 0px;
-    border: none;
-    border-radius: 10px;
     background-color: #a66dfc;
 }
-*/
+
 
 #entry {
     margin: 0px 0px;
@@ -75,6 +74,7 @@ window {
 }
 
 #entry:selected {
+    outline: none;
     margin: 0px 0px;
     border: none;
     border-radius: 10px;

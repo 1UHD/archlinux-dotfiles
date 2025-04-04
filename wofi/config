@@ -14,3 +14,4 @@ allow_images=true
 image_size=30
 gtk_dark=true
 columns=2
+dmenu-wrap_mode=word
