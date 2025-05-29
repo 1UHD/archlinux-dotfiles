@@ -1,0 +1,106 @@
+configuration {
+    modi: "drun,filebrowser,window";
+    show-icons: true;
+    display-drun: " Apps";
+    display-filebrowser: " Files";
+    display-window: " Windows";
+    drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+}
+
+@import "colors.rasi"
+@import "font.rasi"
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 800px;
+    enabled: true;
+    border: 0px solid;
+    border-radius: 10px;
+    border-color: @background;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 10px;
+    padding: 10px;
+    border: 0px solid;
+    text-color: @font;
+    background-color: transparent;
+    children: ["inputbar", "message", "listview", "mode-switcher"];
+}
+
+inputbar {
+    children: ["prompt","textbox-prompt-colon","entry"];
+}
+
+prompt {
+    text-color: @selected;
+}
+
+textbox-prompt-colon {
+    str: " » ";
+}
+
+entry {
+    placeholder: "Search";
+}
+
+listview {
+    lines: 10;
+    scrollbar: false;
+    border: none;
+    background-color: @background;
+    text-color: @font;
+}
+
+element {
+    padding: 5px;
+}
+
+element normal.normal {
+    background-color: @background;
+}
+
+element alternate.normal {
+    background-color: @background;
+}
+
+element normal.active {
+    background-color: @background;
+    text-color: @selected;
+}
+
+element alternate.active {
+    background-color: @background;
+    text-color: @selected;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @font;
+    border-radius: 5px;
+}
+
+element selected.active {
+    background-color: @selected;
+    text-color: @font;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+}
+
+button selected {
+    background-color: @selected;
+    text-color: @background;
+    border-radius: 5px;
+}
+
+message {
+    border: 0px solid;
+    background-color: @background;
+    text-color: @font;
+}

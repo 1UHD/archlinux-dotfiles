@@ -1,0 +1,111 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: none;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    opacity: 0.95;
+}
+
+#custom-archlogo {
+    background: #1e1e2e;
+    opacity: 0.95;
+    color: #1793D1;
+    
+    margin-left: 20px;
+    margin-top: 10px;
+
+    padding-left: 10px;
+    padding-right: 13px;
+    border-radius: 10px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    opacity: 0.95;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    color: #cdd6f4;
+    padding: 5px;
+}
+
+#workspaces button.active {
+    color: #a66dfc;
+}
+
+#window {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+window#waybar.empty #window {
+    background: none;
+}
+
+#custom-cpu {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#custom-gpu {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#network {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#tray {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#clock {
+    background: #1e1e2e;
+    opacity: 0.95;
+
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
