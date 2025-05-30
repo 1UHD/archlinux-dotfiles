@@ -1,25 +1,34 @@
 [global]
-monitor = 0
-origin = top-right
+#display
 width = (0, 350)
 height = (0, 600)
-notification_limit = 5
+origin = top-right
 offset = (20, 20)
-progress_bar = true
-progress_bar_horizontal_alignment = right
-progress_bar_height = 10
-progress_bar_corner_radius = 5
-icon_corner_radius = 5
-indicate_hidden = true
-padding = 5
-gap_size = 10
-frame_width = 0
-layer = overlay
-font = "SF Pro"
-icon_theme = Dracula
-enable_recursive_icon_lookup = true
+indicate_hidden = yes
+notification_limit = 5
+gap_size = 15
+padding = 10
+horizontal_padding = 10
 corner_radius = 10
+frame_width = 0
+
+#progress bar
+progress_bar_corner_radius = 5
+progress_bar_height = 10
+
+#colors
 highlight = "#a66dfc"
+foreground = "#cdd6f4"
+
+#text
+font = "SF Pro 13"
+markup = full
+format = "<span foreground='#a66dfc'><b>%s</b></span>\n%b"
+alignment = left
+
+#icons
+icon_position = left
+icon_theme = Dracula
 
 [urgency_low]
 background = "#1e1e2e"
