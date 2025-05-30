@@ -1,0 +1,5 @@
+modmap:
+  - name: MacOS Keyboard Fix
+    remap:
+      Alt_L: Super_L
+      Super_L: Alt_R
