@@ -1,28 +1,29 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Hack Nerd Font";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: none;
-    color: #cdd6f4;
+    background: #1F2335;
+    border-radius: 10px;
+    color: #C4A7E7;
 }
 
 tooltip {
-    background: #1e1e2e;
+    background: #2A2E3F;
     border-radius: 10px;
 }
 
 #custom-archlogo {
-    background: #1e1e2e;
-    color: #1793D1;
-    
-    margin-left: 20px;
-    margin-top: 10px;
+    background: #2A2E3F;
+    color: #C4A7E7;
+
+    margin: 5px;
+    margin-left: 10px;
 
     padding-left: 10px;
     padding-right: 13px;
@@ -30,27 +31,37 @@ tooltip {
 }
 
 #workspaces {
-    background: #1e1e2e;
+    background: #2A2E3F;
     
-    margin-top: 10px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-left: 10px;
     border-radius: 10px;
 }
 
 #workspaces button {
+    border-radius: 10px;
     color: #cdd6f4;
-    padding: 5px;
+    padding: 3px;
+}
+
+#workspaces button:hover {
+    border-radius: 10px;
+    background: #2A2E3F;
+    border: 1px solid #C4A7E7;
+    color: #C4A7E7
 }
 
 #workspaces button.active {
-    color: #a66dfc;
+    color: #C4A7E7;
 }
 
 #window {
-    background: #1e1e2e;
+    background: #2A2E3F;
 
-    padding: 10px;
-    margin-top: 10px;
+    margin: 5px;
+    padding: 7px;
     border-radius: 10px;
 }
 
@@ -59,77 +70,83 @@ window#waybar.empty #window {
 }
 
 #custom-cpu {
-    background: #1e1e2e;
+    background: #2A2E3F;
 
     border-radius: 10px 0px 0px 10px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 7px;
+    padding-right: 5px;
+    margin: 5px;
+    margin-right: 0px;
 }
 
 #custom-gpu {
-    background: #1e1e2e;
+    background: #2A2E3F;
 
     border-radius: 0px 10px 10px 0px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 7px;
+    margin: 5px;
+    margin-left: 0px;
 }
 
 #pulseaudio.microphone {
-    background: #1e1e2e;
-    color: #87a3ff;
+    background: #2A2E3F;
 
-    padding: 10px;
-    margin-top: 10px;
+    padding: 7px;
+    padding-right: 5px;
+    padding-left: 15px;
+    margin: 5px;
     border-radius: 10px 0px 0px 10px;
     margin-left: 10px;
+    margin-right: 0px;
 }
 
 #pulseaudio {
-    background: #1e1e2e;
-    color: #87a3ff;
+    background: #2A2E3F;
 
-    padding: 10px;
+    padding: 7px;
+    margin: 5px;
+    margin-left: 0px;
     padding-right: 15px;
-    margin-top: 10px;
     border-radius: 0px 10px 10px 0px;
 }
 
 #bluetooth {
-    background: #1e1e2e;
-    color: #597ffd;
+    background: #2A2E3F;
 
-    padding: 10px;
+    padding: 7px;
     padding-left: 15px;
-    margin-top: 10px;
+    padding-right: 5px;
     border-radius: 10px 0px 0px 10px;
     margin-left: 10px;
+    margin: 5px;
+    margin-right: 0px;
 }
 
 #network {
-    background: #1e1e2e;
-    color: #597ffd;
+    background: #2A2E3F;
 
-    padding: 10px;
-    margin-top: 10px;
+    padding: 7px;
+    margin: 5px;
+    margin-left: 0px;
     border-radius: 0px 10px 10px 0px;
 }
 
 #tray {
-    background: #1e1e2e;
+    background: #2A2E3F;
 
-    padding: 10px;
+    padding: 7px;
+    margin: 5px;
     margin-left: 10px;
-    margin-top: 10px;
     border-radius: 10px;
 }
 
 #clock {
-    background: #1e1e2e;
-    color: #a66dfc;
+    background: #2A2E3F;
+    color: #C4A7E7;
 
-    padding: 10px;
+    padding: 7px;
+    margin: 5px;
     margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 10px;
     border-radius: 10px;
 }

@@ -10,20 +10,21 @@ gap_size = 15
 padding = 10
 horizontal_padding = 10
 corner_radius = 10
-frame_width = 0
+frame_width = 2
+frame_color = "#2A2E3F"
 
 #progress bar
 progress_bar_corner_radius = 5
 progress_bar_height = 10
 
 #colors
-highlight = "#a66dfc"
+highlight = "#C4A7E7"
 foreground = "#cdd6f4"
 
 #text
 font = "SF Pro 13"
 markup = full
-format = "<span foreground='#a66dfc'><b>%s</b></span>\n%b"
+format = "<span foreground='#C4A7E7'><b>%s</b></span>\n%b"
 alignment = left
 
 #icons
@@ -31,13 +32,13 @@ icon_position = left
 icon_theme = Dracula
 
 [urgency_low]
-background = "#1e1e2e"
+background = "#1F2335"
 foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#1e1e2e"
+background = "#1F2335"
 foreground = "#cdd6f4"
 
 [urgency_critical]
-background = "#1e1e2e"
+background = "#1F2335"
 foreground = "#cdd6f4"
