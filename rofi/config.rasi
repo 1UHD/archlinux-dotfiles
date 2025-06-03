@@ -16,9 +16,9 @@ window {
     anchor: center;
     width: 800px;
     enabled: true;
-    border: 0px solid;
+    border: 2px solid;
     border-radius: 10px;
-    border-color: @background;
+    border-color: @background-alt;
 }
 
 mainbox {
@@ -86,6 +86,11 @@ element selected.normal {
 element selected.active {
     background-color: @selected;
     text-color: @font;
+    border-radius: 5px;
+}
+
+mode-switcher {
+    background-color: @background-alt;
     border-radius: 5px;
 }
 
