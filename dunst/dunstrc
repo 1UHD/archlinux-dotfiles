@@ -22,14 +22,15 @@ highlight = "#C4A7E7"
 foreground = "#cdd6f4"
 
 #text
-font = "SF Pro 13"
+font = "SF Pro 12"
 markup = full
 format = "<span foreground='#C4A7E7'><b>%s</b></span>\n%b"
 alignment = left
 
 #icons
 icon_position = left
-icon_theme = Dracula
+icon_theme = Papirus-Dark
+enable_recursive_icon_lookup = true
 
 [urgency_low]
 background = "#1F2335"
@@ -42,3 +43,9 @@ foreground = "#cdd6f4"
 [urgency_critical]
 background = "#1F2335"
 foreground = "#cdd6f4"
+
+[mymute]
+max_icon_size = 20
+
+[mydeafen]
+max_icon_size = 20
