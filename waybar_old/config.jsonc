@@ -1,11 +1,21 @@
 {
     "layer": "top",
-    "position": "left",
-    "width": 50,
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
+    "height": 40,
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "pulseaudio#microphone", "pulseaudio", "bluetooth", "network", "clock"],
-    
+    "modules-right": ["custom/cpu", "custom/gpu", "pulseaudio#microphone", "pulseaudio", "bluetooth", "network", "tray", "clock"],
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+
     "custom/archlogo": {
         "format":"󰣇",
         "tooltip": false
@@ -16,10 +26,6 @@
         "all-outputs": true,
         "on-click": "activate",
         "persistent_workspaces": false
-    },
-
-    "hyprland/window": {
-        "rotate": 90
     },
 
     "custom/cpu": {
@@ -40,7 +46,7 @@
         "format-wifi": " ",
         "format-ethernet": "󰌘 ",
         "format-disconnected": "<span foreground='#f38ba8'> </span>",
-        "tooltip-format": "{ifname}\nStrength: {signalStrength}%"
+        "tooltip-format": "{essid}\nStrength: {signalStrength}%"
     },
 
     "bluetooth": {
@@ -58,8 +64,8 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}",
-        "tooltip-format": "{volume}%",
+        "format": "{icon} {volume}%",
+        "tooltip": false,
         "format-muted": "",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
@@ -82,7 +88,7 @@
     },
 
     "clock": {
-        "format": "<span foreground='#c5003c'>{0:%b%e}</span>\n{0:%R}",
+        "format": "{0:%b %e  %R}",
         "interval": 1,
         "tooltip": false
     }
