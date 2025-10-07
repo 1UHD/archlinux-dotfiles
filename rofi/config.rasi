@@ -78,15 +78,13 @@ element alternate.active {
 }
 
 element selected.normal {
-    background-color: @selected;
-    text-color: @font;
-    border-radius: 5px;
+    background-color: @background;
+    text-color: @selected;
 }
 
 element selected.active {
-    background-color: @selected;
-    text-color: @font;
-    border-radius: 5px;
+    background-color: @background;
+    text-color: @selected;
 }
 
 mode-switcher {

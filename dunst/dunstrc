@@ -11,20 +11,20 @@ padding = 10
 horizontal_padding = 10
 corner_radius = 10
 frame_width = 2
-frame_color = "#2A2E3F"
+frame_color = "#2c2c2c"
 
 #progress bar
 progress_bar_corner_radius = 5
 progress_bar_height = 10
 
 #colors
-highlight = "#C4A7E7"
+highlight = "#c5003c"
 foreground = "#cdd6f4"
 
 #text
 font = "SF Pro 12"
 markup = full
-format = "<span foreground='#C4A7E7'><b>%s</b></span>\n%b"
+format = "<span foreground='#c5003c'><b>%s</b></span>\n%b"
 alignment = left
 
 #icons
@@ -33,15 +33,15 @@ icon_theme = Papirus-Dark
 enable_recursive_icon_lookup = true
 
 [urgency_low]
-background = "#1F2335"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#1F2335"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [urgency_critical]
-background = "#1F2335"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [mymute]
