@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "modules-left": ["custom/archlogo", "hyprland/workspaces"],
+    "modules-right": ["tray", "network", "custom/cpu", "custom/gpu", "custom/ram", "clock"],
+
+    "custom/archlogo": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "●",
+            "active": "●"
+        },
+        "all-outputs": true,
+        "persistent-workspaces": {
+            "*": 9
+        }
+    },
+
+    "network": {
+        "format": "<span foreground='#BB9AF7'>▲</span> {bandwidthUpBytes} <span foreground='#7AA2F7'>▼</span> {bandwidthDownBytes}",
+        "tooltip": false,
+        "interval": 1
+    },
+
+    "custom/cpu": {
+        "format": "<span foreground='#E0AF68'>􀫥</span>31%"
+    },
+
+    "custom/gpu": {
+        "format": "<span foreground='#E0AF68'> </span>69%"
+    },
+
+    "custom/ram": {
+        "format": "<span foreground='#E0AF68'> </span>56%"
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{0:%a %b %d %H:%M}",
+        "interval": 1,
+        "tooltip": false
+    }
+}
