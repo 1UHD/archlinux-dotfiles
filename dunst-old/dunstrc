@@ -3,27 +3,28 @@
 width = (0, 350)
 height = (0, 600)
 origin = top-right
-offset = (10, 0)
+offset = (20, 20)
 indicate_hidden = yes
 notification_limit = 5
-gap_size = 5
+gap_size = 15
 padding = 10
 horizontal_padding = 10
-corner_radius = 0
-frame_width = 0
+corner_radius = 10
+frame_width = 2
+frame_color = "#2c2c2c"
 
 #progress bar
-progress_bar_corner_radius = 2
+progress_bar_corner_radius = 5
 progress_bar_height = 10
 
 #colors
-highlight = "#7AA2F7"
+highlight = "#c5003c"
 foreground = "#cdd6f4"
 
 #text
 font = "SF Pro 12"
 markup = full
-format = "<span foreground='#ffffff'><b>%s</b></span>\n%b"
+format = "<span foreground='#c5003c'><b>%s</b></span>\n%b"
 alignment = left
 
 #icons
@@ -32,15 +33,15 @@ icon_theme = Papirus-Dark
 enable_recursive_icon_lookup = true
 
 [urgency_low]
-background = "#131e22b3"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#131e22b3"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [urgency_critical]
-background = "#131e22b3"
+background = "#1c1c1c"
 foreground = "#cdd6f4"
 
 [mymute]

@@ -10,6 +10,10 @@ window#waybar {
     background: rgba(19, 30, 34, 0.7);
 }
 
+tooltip {
+    background: rgba(19, 30, 34, 0.7);
+    border-radius: 10px;
+}
 
 #custom-archlogo {
     color: #1793d1;
@@ -69,7 +73,7 @@ window#waybar {
     border-radius: 7px;
 }
 
-#custom-cpu {
+#cpu {
     background:rgba(53, 83, 93, 0.3);
 
     margin: 6px;
@@ -95,7 +99,7 @@ window#waybar {
     padding-bottom: 0px;
 }
 
-#custom-ram {
+#memory {
     background:rgba(53, 83, 93, 0.3);
 
     margin: 6px;

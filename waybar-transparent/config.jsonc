@@ -3,7 +3,7 @@
     "position": "top",
     "height": 40,
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],
-    "modules-right": ["tray", "network", "custom/cpu", "custom/gpu", "custom/ram", "clock"],
+    "modules-right": ["tray", "network", "cpu", "custom/gpu", "memory", "clock"],
 
     "custom/archlogo": {
         "format": "󰣇",
@@ -28,16 +28,25 @@
         "interval": 1
     },
 
-    "custom/cpu": {
-        "format": "<span foreground='#E0AF68'>􀫥</span>31%"
+    "cpu": {
+        "format": "<span foreground='#E0AF68'>􀫥</span>{usage}%",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Clock: {avg_frequency}GHz/{max_frequency}GHz"
     },
 
     "custom/gpu": {
-        "format": "<span foreground='#E0AF68'> </span>69%"
+        "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+        "format": "<span foreground='#E0AF68'> </span>{}%",
+        "interval": 1,
+        "tooltip": false
     },
 
-    "custom/ram": {
-        "format": "<span foreground='#E0AF68'> </span>56%"
+    "memory": {
+        "format": "<span foreground='#E0AF68'> </span>{percentage}%",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Total: {used}GiB/{total}GiB"
     },
     
     "tray": {

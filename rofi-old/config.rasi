@@ -16,7 +16,7 @@ window {
     anchor: center;
     width: 800px;
     enabled: true;
-    border: none;
+    border: 2px solid;
     border-radius: 10px;
     border-color: @background-alt;
 }
@@ -51,7 +51,7 @@ listview {
     lines: 10;
     scrollbar: false;
     border: none;
-    background-color: none;
+    background-color: @background;
     text-color: @font;
 }
 
@@ -60,30 +60,30 @@ element {
 }
 
 element normal.normal {
-    background-color: none;
+    background-color: @background;
 }
 
 element alternate.normal {
-    background-color: none;
+    background-color: @background;
 }
 
 element normal.active {
-    background-color: none;
+    background-color: @background;
     text-color: @selected;
 }
 
 element alternate.active {
-    background-color: none;
+    background-color: @background;
     text-color: @selected;
 }
 
 element selected.normal {
-    background-color: none;
+    background-color: @background;
     text-color: @selected;
 }
 
 element selected.active {
-    background-color: none;
+    background-color: @background;
     text-color: @selected;
 }
 
