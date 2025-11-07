@@ -48,3 +48,7 @@ max_icon_size = 20
 
 [mydeafen]
 max_icon_size = 20
+
+[youtube-music]
+appname = "com.github.th_ch.youtube_music"
+max_icon_size = 40

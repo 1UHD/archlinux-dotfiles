@@ -17,7 +17,6 @@ window {
     width: 800px;
     enabled: true;
     border: none;
-    border-radius: 10px;
     border-color: @background-alt;
 }
 
