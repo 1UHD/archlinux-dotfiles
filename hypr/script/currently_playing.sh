@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Get metadata
-artist=$(playerctl metadata --format '{{artist}}')
-title=$(playerctl metadata --format '{{title}}')
+status=$(playerctl status 2>/dev/null)
 
-# Optional: bail out if nothing is playing
-[ -z "$artist" ] && [ -z "$title" ] && exit 0
-
-# Send notification: summary = artist, body = title
-dunstify "$artist" "$title"
+if [[ "$status" == "Playing" ]]; then
+    artist=$(playerctl metadata --format '{{artist}}')
+    title=$(playerctl metadata --format '{{title}}')
+    dunstify -t 3000 "$artist" "$title"
+else
+    dunstify -t 3000 "No player detected"
+fi
