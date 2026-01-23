@@ -50,3 +50,10 @@ background-opacity = 0.7
 
 #font
 font-family = "JetBrainsMono Nerd Font"
+
+#cursor shader
+custom-shader = "./shaders/cursor.glsl"
+custom-shader-animation = true
+cursor-text = cell-foreground
+adjust-cursor-thickness = 2
+cursor-opacity = 0
