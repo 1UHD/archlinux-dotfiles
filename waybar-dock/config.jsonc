@@ -1,0 +1,18 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 45,
+    "modules-center": ["hyprland/workspaces"],
+
+    "hyprland/workspaces": {
+        "format": "{windows}",
+        "format-window-separator": "",
+        "workspace-taskbar": {
+            "enable": true,
+            "update-active-window": true,
+            "format": "{icon} ",
+            "icon-size": 35,
+            "on-click-window": "~/.config/waybar-dock/scripts/handle_click.sh {address} {button}"
+        }
+    }
+}

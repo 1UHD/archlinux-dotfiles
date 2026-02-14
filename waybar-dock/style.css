@@ -1,0 +1,27 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Hack Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: rgba(19, 30, 34, 0.7);
+    border-radius: 10px;
+}
+
+#workspaces {
+    background: rgba(19, 30, 34, 0.7);
+    border-radius: 15px 15px 0 0;
+    padding-left: 10px;
+}
+
+#workspaces button {
+    margin: 0;
+    padding: 0;
+}
