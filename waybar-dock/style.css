@@ -19,9 +19,22 @@ tooltip {
     background: rgba(19, 30, 34, 0.7);
     border-radius: 15px 15px 0 0;
     padding-left: 10px;
+    padding-right: 2px;
+}
+
+#workspaces button.active {
+    background: transparent;
+}
+
+#workspaces button.empty {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
 }
 
 #workspaces button {
-    margin: 0;
+    color: transparent;
     padding: 0;
+    margin: 0;
+    background: transparent;
 }

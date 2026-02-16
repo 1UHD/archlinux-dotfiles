@@ -7,10 +7,13 @@
     "hyprland/workspaces": {
         "format": "{windows}",
         "format-window-separator": "",
+        "all-outputs": true,
+        "show-special": false,
+        "active-only": false,
         "workspace-taskbar": {
             "enable": true,
             "update-active-window": true,
-            "format": "{icon} ",
+            "format": "{icon}|",
             "icon-size": 35,
             "on-click-window": "~/.config/waybar-dock/scripts/handle_click.sh {address} {button}"
         }
