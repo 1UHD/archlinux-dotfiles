@@ -18,6 +18,13 @@ selection=$(ls "$WALLPAPER_DIR" | grep -Ei "\.($VALID_EXTENSIONS)$" | rofi -dmen
 # If a selection was made, apply it
 if [ -n "$selection" ]; then
     swww img "$WALLPAPER_DIR/$selection" \
+        -o "DP-3" \
+        --transition-type wipe \
+        --transition-angle 30 \
+        --transition-fps 60
+    
+    swww img "$WALLPAPER_DIR/$selection" \
+        -o "DP-2" \
         --transition-type wipe \
         --transition-angle 30 \
         --transition-fps 60
