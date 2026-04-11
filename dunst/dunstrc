@@ -1,5 +1,6 @@
 [global]
 #display
+follow = mouse
 width = (0, 350)
 height = (0, 600)
 origin = top-right
