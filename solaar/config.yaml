@@ -7,13 +7,13 @@
     change-host, gesture2-gestures, gesture2-divert, gesture2-params, haptic-level, haptic-play, sidetone, equalizer, adc_power_management]
   _battery: 4097
   _modelId: 4079C0880000
-  _sensitive: {dpi: false, hires-scroll-mode: ignore, hires-smooth-invert: ignore, hires-smooth-resolution: ignore}
+  _sensitive: {dpi: false, hires-scroll-mode: ignore, hires-smooth-invert: ignore, hires-smooth-resolution: ignore, onboard_profiles: false}
   _serial: 0A10CE17
   _unitId: 0A10CE17
   _wpid: '4079'
   dpi: 500
   led_control: 0
-  onboard_profiles: 1
+  onboard_profiles: 0
   report_rate: 1
 - _NAME: MX Mechanical Mini
   _absent: [hi-res-scroll, lowres-scroll-mode, hires-smooth-invert, hires-smooth-resolution, hires-scroll-mode, scroll-ratchet, scroll-ratchet-torque, smart-shift,
