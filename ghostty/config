@@ -45,7 +45,7 @@
 
 #colors
 theme = TNTransparent
-background-opacity = 0.7
+#background-opacity = 0.7
 #background-blur = 1
 
 #font

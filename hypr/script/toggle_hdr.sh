@@ -13,15 +13,11 @@ else
 fi
 
 if [[ "${STATE}" == "on" ]]; then
-    hyprctl keyword "monitorv2[${MONITOR}]:bitdepth 8"
-    hyprctl keyword "monitorv2[${MONITOR}]:cm auto"
-    hyprctl keyword "render:cm_fs_passthrough 0"
+    hyprctl eval 'hl.monitor({ output = "DP-1", bitdepth = 8, cm = "auto" })'
     echo "off" > "$STATE_FILE"
     $NOTIFY_CMD -u normal -i display -t 10000 "HDR Disabled"
 else
-    hyprctl keyword "monitorv2[${MONITOR}]:bitdepth 10"
-    hyprctl keyword "monitorv2[${MONITOR}]:cm hdr"
-    hyprctl keyword "render:cm_fs_passthrough 1"
+    hyprctl eval 'hl.monitor({ output = "DP-1", bitdepth = 10, cm = "hdr" })'
     echo "on" > "$STATE_FILE"
     $NOTIFY_CMD -u normal -i display -t 10000 "HDR Enabled"
 fi

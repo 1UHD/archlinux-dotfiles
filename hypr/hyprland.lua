@@ -1,0 +1,8 @@
+require("conf.animations")
+require("conf.autostart")
+require("conf.binds")
+require("conf.general")
+require("conf.input")
+require("conf.monitors")
+require("conf.windowrules")
+require("conf.workspaces")
