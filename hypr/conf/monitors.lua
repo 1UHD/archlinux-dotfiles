@@ -20,10 +20,3 @@ hl.monitor({
     scale = "1.5",
     transform = 3
 })
-
-hl.workspace_rule({
-    workspace = "1",
-    monitor = "DP-1",
-    default = true,
-    persistent = true
-})
