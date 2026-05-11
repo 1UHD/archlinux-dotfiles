@@ -47,7 +47,7 @@ hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m output"))
 
 -- volume control & mute
-hl.bind("SHIFT + F12", hl.dsp.exec_cmd("~/.config/hypr/script/audio_mute.sh"))
+hl.bind("code:121", hl.dsp.exec_cmd("~/.config/hypr/script/audio_mute.sh"))
 hl.bind("code:122", hl.dsp.exec_cmd("pamixer -d 5 && ~/.config/hypr/script/volume_change.sh"))
 hl.bind("code:123", hl.dsp.exec_cmd("pamixer -i 5 && ~/.config/hypr/script/volume_change.sh"))
 hl.bind("SUPER + M", hl.dsp.exec_cmd("~/.config/hypr/script/mic_mute.sh"))
