@@ -1,0 +1,45 @@
+{
+    "anchors": {
+        "top": false,
+        "left": true,
+        "right": true,
+        "bottom": true
+    },
+    "margin": 4,
+    "apps": {
+        "pinned": [
+            {
+                "class": "zen",
+                "command": "/opt/zen-browser-bin/zen-bin"
+            },
+            {
+                "class": "com.github.th_ch.youtube_music",
+                "command": "youtube-music"
+            },
+            {
+                "class": "org.telegram.desktop",
+                "command": "Telegram --"
+            },
+            {
+                "class": "vesktop",
+                "command": "/usr/bin/vesktop --ozone-platform=wayland --enable-features=UseOzonePlatform"
+            },
+            {
+                "class": "VSCodium",
+                "command": "/usr/bin/codium"
+            },
+            {
+                "class": "com.mitchellh.ghostty",
+                "command": "/usr/bin/ghostty --gtk-single-instance=true"
+            },
+            {
+                "class": "steam",
+                "command": "/usr/bin/steam"
+            },
+            {
+                "class": "org.prismlauncher.PrismLauncher",
+                "command": "prismlauncher"
+            }
+        ]
+    }
+}

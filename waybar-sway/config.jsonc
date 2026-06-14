@@ -1,0 +1,69 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "modules-left": ["custom/archlogo", "sway/workspaces"],
+    "modules-right": ["tray", "network", "cpu", "custom/gpu", "memory", "clock"],
+
+    "custom/archlogo": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+
+    "sway/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "●",
+            "active": "●"
+        },
+        "persistent-workspaces": {
+            "1": ["DP-1", "DP-2"],
+            "2": ["DP-1", "DP-2"],
+	        "3": ["DP-1", "DP-2"],
+            "4": ["DP-1", "DP-2"],
+            "5": ["DP-1", "DP-2"],
+            "6": ["DP-1", "DP-2"],
+            "7": ["DP-1", "DP-2"],
+            "8": ["DP-1", "DP-2"],
+            "9": ["DP-1", "DP-2"]
+        }
+    },
+
+    "network": {
+        "format": "<span foreground='#BB9AF7'>▲</span> {bandwidthUpBytes} <span foreground='#7AA2F7'>▼</span> {bandwidthDownBytes}",
+        "tooltip": false,
+        "interval": 1
+    },
+
+    "cpu": {
+        "format": "<span foreground='#E0AF68'>􀫥</span>{usage}%",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Clock: {avg_frequency}GHz/{max_frequency}GHz"
+    },
+
+    "custom/gpu": {
+        "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+        "format": "<span foreground='#E0AF68'> </span>{}%",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "<span foreground='#E0AF68'> </span>{percentage}%",
+        "interval": 1,
+        "tooltip": true,
+        "tooltip-format": "Total: {used}GiB/{total}GiB"
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{0:%a %b %d %H:%M}",
+        "interval": 1,
+        "tooltip": false
+    }
+}

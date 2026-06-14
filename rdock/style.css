@@ -1,0 +1,36 @@
+window {
+    background: transparent;
+}
+
+tooltip {
+    background: rgb(19, 30, 34);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dock-bar {
+    background: rgba(19, 30, 34, 0.7);
+    border-radius: 16px;
+    padding: 6px 10px;
+    border: none;
+}
+
+.dock-component {
+    border-radius: 12px;
+    padding: 4px;
+    transition: all 180ms ease;
+}
+
+.indicator-dot {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+.indicator-bar {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    min-width: 12px;
+    min-height: 4px;
+}
