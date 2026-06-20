@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "nvim": {
+      "rev": "49a926655a2f5579e9c276470fc300baaa49e524",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "tokyonight.nvim": {
+      "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
+      "src": "https://github.com/folke/tokyonight.nvim"
+    }
+  }
+}
