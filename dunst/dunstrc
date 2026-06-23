@@ -1,17 +1,17 @@
 [global]
 #display
 follow = mouse
-width = (0, 350)
-height = (0, 600)
+width = (200, 360)
+height = (60, 600)
 origin = top-right
-offset = (10, 0)
+offset = (5, 5)
 indicate_hidden = yes
 notification_limit = 5
 gap_size = 5
 padding = 10
 horizontal_padding = 10
-corner_radius = 0
-frame_width = 0
+corner_radius = 14
+frame_width = 1
 
 #progress bar
 progress_bar_corner_radius = 2
@@ -20,6 +20,7 @@ progress_bar_height = 10
 #colors
 highlight = "#7AA2F7"
 foreground = "#cdd6f4"
+frame_color = "#3a3a3c"
 
 #text
 font = "SF Pro 12"
@@ -33,11 +34,11 @@ icon_theme = Papirus-Dark
 enable_recursive_icon_lookup = true
 
 [urgency_low]
-background = "#131e22b3"
+background = "#1c1c1eb3"
 foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#131e22b3"
+background = "#1c1c1eb3"
 foreground = "#cdd6f4"
 
 [urgency_critical]
