@@ -9,10 +9,10 @@ tooltip {
 }
 
 .dock-bar {
-    background: rgba(19, 30, 34, 0.7);
-    border-radius: 16px;
-    padding: 6px 10px;
-    border: none;
+    background: #1c1c1e99;
+    border-radius: 14px;
+    padding: 3px 10px;
+    border: 1px solid #3a3a3c;
 }
 
 .dock-component {

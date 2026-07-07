@@ -24,6 +24,12 @@ hl.layer_rule({
 })
 
 hl.layer_rule({
+    match = { namespace = "rdock" },
+    blur = true,
+    ignore_alpha = 0
+})
+
+hl.layer_rule({
     match = { namespace = "rust-muted-overlay" },
     blur = true
 })
