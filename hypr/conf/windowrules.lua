@@ -38,3 +38,8 @@ hl.window_rule({
     match = { class = "vesktop" },
     workspace = "6 silent",
 })
+
+hl.window_rule({
+    match = { class = "org.pwmt.zathura" },
+    idle_inhibit = "focus"
+})
