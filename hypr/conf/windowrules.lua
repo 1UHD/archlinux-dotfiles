@@ -31,7 +31,7 @@ hl.layer_rule({
 
 hl.layer_rule({
     match = { namespace = "rust-muted-overlay" },
-    blur = true
+    blur = true,
 })
 
 hl.window_rule({
@@ -42,4 +42,9 @@ hl.window_rule({
 hl.window_rule({
     match = { class = "org.pwmt.zathura" },
     idle_inhibit = "focus"
+})
+
+hl.window_rule({
+	match = { class = "rust-muted-overlay" },
+	idle_inhibit = "always"
 })
