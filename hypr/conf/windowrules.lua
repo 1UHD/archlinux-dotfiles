@@ -45,6 +45,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	match = { class = "rust-muted-overlay" },
+	match = { namespace = "rust-muted-overlay" },
 	idle_inhibit = "always"
 })
