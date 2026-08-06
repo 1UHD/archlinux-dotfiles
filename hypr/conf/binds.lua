@@ -57,3 +57,10 @@ hl.bind("SUPER + I", hl.dsp.exec_cmd("playerctl previous"))
 hl.bind("SUPER + O", hl.dsp.exec_cmd("playerctl next"))
 hl.bind("SUPER + P", hl.dsp.exec_cmd("~/.config/hypr/script/track_pause.sh"))
 hl.bind("SUPER + SHIFT + P", hl.dsp.exec_cmd("~/.config/hypr/script/currently_playing.sh"))
+
+-- dpms
+hl.bind("SUPER + SHIFT + H", function()
+    hl.timer(function()
+        hl.dispatch(hl.dsp.dpms({ action = "off" }))
+    end, { timeout = 500, type = "oneshot" })
+end)
