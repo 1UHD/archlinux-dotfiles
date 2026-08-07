@@ -1,7 +1,7 @@
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar -c ~/.config/waybar-transparent/config.jsonc -s ~/.config/waybar-transparent/style.css")
     --hl.exec_cmd("waybar -c ~/.config/waybar-dock/config.jsonc -s ~/.config/waybar-dock/style.css")
-    hl.exec_cmd("rdock")
+    --hl.exec_cmd("rdock")
     hl.exec_cmd("awww-daemon")
     hl.exec_cmd("sleep 3 && awww restore")
     hl.exec_cmd("dunst")
