@@ -31,7 +31,7 @@
     },
 
     "cpu": {
-        "format": "<span foreground='#E0AF68'>􀫥</span>{usage}%",
+        "format": "<span foreground='#E0AF68'> </span>{usage}%",
         "interval": 1,
         "tooltip": true,
         "tooltip-format": "Clock: {avg_frequency}GHz/{max_frequency}GHz"
@@ -39,13 +39,13 @@
 
     "custom/gpu": {
         "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
-        "format": "<span foreground='#E0AF68'> </span>{}%",
+        "format": "<span foreground='#E0AF68'>􀫥</span>{}%",
         "interval": 1,
         "tooltip": false
     },
 
     "memory": {
-        "format": "<span foreground='#E0AF68'> </span>{percentage}%",
+        "format": "<span foreground='#E0AF68'> </span>{percentage}%",
         "interval": 1,
         "tooltip": true,
         "tooltip-format": "Total: {used}GiB/{total}GiB"
